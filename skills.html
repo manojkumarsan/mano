@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Vertical Line Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="skills">SKILLS :</h1>
+    <div class="container">
+        <div class="vertical-line">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="content">
+            <ul>
+                <li>Web Development</li>
+                <li>java</li>
+                <li>javascirpt</li>
+                <li>react.js</li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+    background: linear-gradient(to right, #159957, #155799);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    right: 300px;
+    top: 50px;
+}
+.skills{
+    position: relative;
+    right: 210px;
+    bottom: 100px;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 4px;
+    height: 180px;
+    background: linear-gradient(to bottom, #e74c3c, #8e44ad);
+    border-radius: 10px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot:first-child {
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.dot:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot:last-child {
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color:yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    </style>
+</body>
+</html>

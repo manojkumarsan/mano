@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Line with Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="edu">EDUCATION :</h1>
+    <div class="container">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>Bachelor of Engineering in Computer Science</h3>
+                    <p>meenakshi ramaswamy Engineering college,thathanur, 2020-2024</p>
+                    <p>CGPA-7.440</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>SSC</h3>
+                    <p>st.philominal hr sec school,kulumur, 2019-2020</p>
+                    <p>68%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="content">
+                    <h3>SSLC</h3>
+                    <p>Vetri hr sec school,agaram sigoor, 2017-2018</p>
+                    <p>68%</p>
+                </div>
+            </div>
+           <style>
+ body {
+    background: linear-gradient(to right, #f1f2b5, #135058);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:linear-gradient(to right, #dd5e89, #f7bb97);
+    border-radius: 8px;
+    box-shadow: linear-gradient(to right, #dd5e89, #f7bb97);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -21px;
+    height: 100%;
+    width: 3px;
+    background: #007bff;
+    border-radius: 3px;
+}
+
+.circle {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.content p {
+    margin: 0;
+    color: #777;
+}
+
+           </style>
+        </div>
+    </div>
+</body>
+</html>
